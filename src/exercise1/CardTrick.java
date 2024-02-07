@@ -77,7 +77,7 @@ public class CardTrick {
      * replace this information with your own.
      */
     private static void printInfo() {
-
+// I'm done
         System.out.println("Congratulations, you guessed right!");
         System.out.println();
 
