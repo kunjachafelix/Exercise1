@@ -1,5 +1,6 @@
 package exercise1;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -61,17 +62,38 @@ public class CardTrick {
         return new Card(value, suit);
     }
 
-    // Rest of the code (generateRandomValue, generateRandomSuit, printInfo) remains unchanged.
-
-    private static int generateRandomSuit() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
     private static int generateRandomValue() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
+     
+    private static int generateRandomSuit() {
+        Random random = new Random();
+        return random.nextInt(Card.SUITS.length);
+    }
+
+    /**
+     * A simple method to print out personal information. Follow the instructions to
+     * replace this information with your own.
+     */
     private static void printInfo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+
+        System.out.println("Congratulations, you guessed right!");
+        System.out.println();
+
+        System.out.println("My name is Your Name");
+        System.out.println();
+
+        System.out.println("My career ambitions:");
+        System.out.println("-- Replace with your career ambitions");
+
+        System.out.println();
+
+        System.out.println("My hobbies:");
+        System.out.println("-- Replace with your hobbies");
+
+        System.out.println();
     }
 }
+    
+
